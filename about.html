@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μουσείο των ΕΑΜ – ΕΛΑΣ – ΔΣΕ</title>
+    <style>
+		/* Στυλ για τη δομή της ιστοσελίδας: Κεφαλίδα, περιεχόμενο, υποσέλιδο και ενσωμάτωση iframe */
+        body { font-family: Arial, sans-serif; text-align: center; }
+        header { background: #b22222; color: white; padding: 10px; }
+        footer { background: #b22222; color: white; padding: 10px; }
+        nav a { margin: 0 15px; color: white; text-decoration: none; }
+        section { padding: 40px; }
+        iframe { width: 50%; height: 550px; border: none; }
+
+        /* Στυλ για τις εικόνες με το iframe */
+        .iframe-container {
+            display: flex;
+            justify-content: center; /* Κεντράρισμα οριζόντια */
+            align-items: center;     /* Κεντράρισμα κατακόρυφα */
+            gap: 50px;
+            margin-bottom: 20px;
+            text-align: center; /* Κεντράρισμα κειμένου */
+        }
+
+        .iframe-container iframe {
+            width: 48%; /* Ορισμός πλάτους iframe στο 48% για να χωράνε δύο δίπλα δίπλα */
+            height: 450px; /* Σταθερό ύψος */
+            border-radius: 8px;
+        }
+
+        /* Στυλ για το iframe που περιέχει το βίντεο από το YouTube */
+        iframe[src*="youtube.com"] {
+            width: 40%;
+            height: 350px;
+            border-radius: 8px;
+        }
+
+        /* Στυλ για το iframe που περιέχει τον χάρτη από το Google Maps */
+        iframe[src*="google.com/maps"] {
+            width: 40%;
+			height: 350px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Μουσείο ΕΑΜ – ΕΛΑΣ – ΔΣΕ</h1>
+        <nav>
+            <a href="#text">Το Μουσείο</a>
+            <a href="#photos">Φωτογραφίες</a>
+            <a href="#video">Βίντεο</a>
+            <a href="#photo360">360°</a>
+            <a href="#map">Χάρτης</a>
+            <a href="#contact">Επικοινωνία</a>
+        </nav>
+    </header>
+    <section id="text">
+        <h2>Το Μουσείο</h2>
+        <div class="iframe-container">
+            <p>Το μεγάλο αυτό εγχείρημα, αντάξιο της προσφοράς του λαού της περιοχής στους αγώνες της περιόδου 1940 – 1949,<br> έγινε πραγματικότητα χάρη στη δωρεά του οικοδομήματος από τον σύντροφο Χάρη Τουτούνη, 
+			στη μνήμη των αγωνιστών γονιών του, Μάρκου και Ελένης Τουτούνη.<br> Η εθελοντική δουλειά δεκάδων μελών και φίλων του ΚΚΕ και της ΚΝΕ, η συμβολή των κατοίκων της περιοχής με εργασία και οικονομική στήριξη,<br>
+			καθώς και η υποστήριξη του δήμου Νεστορίου σε ό,τι χρειάστηκε, ήταν τα «υλικά» που το μετέτρεψαν σε ένα καλαίσθητο Μουσείο.<br> Στο εξωτερικό του Μνημείου - Μουσείου δεσπόζουν μεταλλικές επιφάνειες με τα ονόματα των 450 ανταρτών
+			που πότισαν με το αίμα τους τα ιερά χώματα της περιοχής<br> τόσο την περίοδο της ΕΑΜικής Αντίστασης ενάντια στην τριπλή φασιστική κατοχή των Ιταλών, των Γερμανών και των Βουλγάρων,<br> αλλά και έπειτα στην κορυφαία στον 20ό αιώνα στιγμή της ταξικής πάλης 
+			στην Ελλάδα την τρίχρονη εποποιία του ΔΣΕ.</p>
+        </div>
+    </section>
+
+    <section id="photos">
+        <h2>Φωτογραφίες του Μουσείου</h2>
+        <div class="iframe-container">
+            <iframe src="https://www.katiousa.gr/wp-content/uploads/2021/10/mnimeio-mouseio-nestorio1.jpg" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.katiousa.gr/wp-content/uploads/2021/10/mnimeio-mouseio-nestorio4.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+	
+	    <section id="photo360">
+        <h2>Εικονική Περιήγηση</h2>
+        <iframe src="https://www.kkeweb.net/360_nestorio/" allowfullscreen></iframe>
+    </section>
+
+    <section id="video">
+        <h2>Βίντεο από τα Εγκαίνια του Μουσείου των ΕΑΜ - ΕΛΑΣ - ΔΣΕ</h2>
+        <iframe src="https://www.youtube.com/embed/IlfHcfBTexc?si=OWlPZAC4mXxw8VDJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <section id="map">
+        <h2>Τοποθεσία</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.835676859042!2d21.265795315315836!3d40.4518288793639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1356a123456789ab%3A0x123456789abcdef!2sNestorio%2C%20Greece!5e0!3m2!1sen!2sgr!4v1670000000000" allowfullscreen></iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Επικοινωνία</h2>
+        <p>Για περισσότερες πληροφορίες, μπορείτε να επικοινωνήσετε μαζί μας:</p>
+        <p>Email: <a href="mailto:info@museum-resistance.gr">info@museum-resistance.gr</a></p>
+        <p>Τηλέφωνο: <a href="tel:+302101234567">+30 210 1234567</a></p>
+        <p>Διεύθυνση: Νεστόριο, Ελλάδα</p>
+    </section>
+
+    <footer>
+		<p>Μιχαλης Γδοντελης &copy; 2025 Μουσείο ΕΑΜ - ΕΛΑΣ - ΔΣΕ</p>
+        <p>Δημιουργήθηκε στο πλαίσιο του μαθήματος Τεχνολογίες Διαδικτύου του Τμήματος Πολιτισμικής Τεχνολογίας και Επικοινωνίας, Παν. Αιγαίου.</p>
+        <a href="#top" style="color: white;">Επιστροφή στην κορυφή</a>
+    </footer>
+</body>
+</html>
